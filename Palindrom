@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int T;
+    cin >> T;
+    for(int i=1; i<=T; i++){
+        int n, orginal, reverse=0,remi;
+        cin>>n;
+    orginal = n;
+while(n!=0){
+    remi = n%10;
+    reverse = (reverse*10)+remi;
+    n = n/10;
+}
+if(orginal==reverse){
+    cout << "Case "<< i<<": Yes"<<endl;
+}else{
+        cout << "Case "<< i<<": No"<<endl;
+
+}
+}
+return 0;
+}
